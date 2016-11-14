@@ -1,0 +1,70 @@
+<html>
+<style>
+  @keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+  }
+  .bg {
+    background: green;
+  }
+  .bb {
+    background: blue;
+  }
+  .br {
+    background: red;
+  }
+  .by {
+    background: yellow;
+  }
+  .abc {
+    height: 100px;
+    width: 100px;
+	margin: -2.5px;
+    border-radius: 100px 0 0 0;
+  }
+  .inline {
+    display: inline-block;
+  }
+  .rotate90 {
+    transform:rotate(90deg);
+  }
+  .rotate180 {
+    transform:rotate(180deg);
+  }
+  .rotate270 {
+    transform:rotate(270deg);
+  }
+  .rotatingDiv {
+    display: inline-block;
+    animation-name: spin;
+    animation-duration: 40000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .whiteCircle {
+    background: white;
+    width: 100px;
+    height: 100px;
+	display: inline-block;
+  }
+</style>
+<body>
+
+<div class="rotatingDiv">
+  <div>
+    <div class="abc bg inline">
+    </div>
+    <div class="abc br inline rotate90">
+    </div>
+  </div>
+  <div>
+    <div class="abc by inline rotate270">
+    </div>
+    <div class="abc bb inline rotate180">
+    </div>
+  </div>
+</div>
+<div class="whiteCircle">
+</div>
+</body>
+</html>
